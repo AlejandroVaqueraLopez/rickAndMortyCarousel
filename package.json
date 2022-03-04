@@ -1,0 +1,21 @@
+{
+  "name": "rickandmortycarousel",
+  "version": "1.0.0",
+  "description": "Rick and Morty show characters",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "Alejandro Vaquera Lopez",
+  "license": "ISC",
+  "files": [
+    "./particles.js",
+    "./particles.min.js"
+  ],
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

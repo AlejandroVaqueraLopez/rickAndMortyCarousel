@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rick And Morty Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="./public/styles/index.css">
+  <link rel="stylesheet" href="public/styles/particles.css">
+</head>
+<body>
+
+	<!-- particles.js container -->
+	<div id="particles-js"></div>
+
+	<header>
+		<img class="header-logo" src="./public/images/rickAndMortyLogo.png" alt="rickAndMortyLogo.png">
+	</header>
+
+	<main>
+
+		<div class="carousel-content">
+			<div id="characterImage" class="character-image"></div>
+
+			<div class="character-info">
+
+				<h1 id="char-name" class="char-name"></h1>
+				<h4 id="char-status"></h4>
+				<h4 id="char-species"></h4>
+				<h5 class="lbl-char-location">Last known location:</h5>
+				<h4 id="char-location"></h4>
+				<h5 class="lbl-char-first-seen">First seen in:</h5>
+				<h4 id="char-first-seen"></h4>
+
+			</div>
+		</div>
+		<div class="input-container">
+			<input id="btn-prev" type="button" value="Prev">
+			<input id="btn-next" type="button" value="Next">
+		</div>
+
+	</main>
+
+	<footer>
+	</footer>
+
+
+	<!-- scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="public/js/particles.js"></script>
+	<script src="public/js/app.js"></script>
+	<script type = "module" src="public/js/fetchData.js"></script>
+	<script type= "module" src="public/js/callback.js"></script>
+
+</body>
+</html>
