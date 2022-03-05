@@ -5,45 +5,46 @@
 	<title>Rick And Morty Carousel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--styles-->
 	<link rel="stylesheet" href="./public/styles/index.css">
   <link rel="stylesheet" href="public/styles/particles.css">
+	<!--fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-
 	<!-- particles.js container -->
 	<div id="particles-js"></div>
-
+	<!-- header-->
 	<header>
 		<img class="header-logo" src="./public/images/rickAndMortyLogo.png" alt="rickAndMortyLogo.png">
 	</header>
-
+	<!-- main-->
 	<main>
-
+	<!--carousel content-->
 		<div class="carousel-content">
+			<input id="btn-author" class="btn-author" type="button">
 			<div id="characterImage" class="character-image"></div>
-
+	<!--cahracter info-->
 			<div class="character-info">
-
-				<h1 id="char-name" class="char-name"></h1>
-				<h4 id="char-status"></h4>
-				<h4 id="char-species"></h4>
-				<h5 class="lbl-char-location">Last known location:</h5>
-				<h4 id="char-location"></h4>
-				<h5 class="lbl-char-first-seen">First seen in:</h5>
-				<h4 id="char-first-seen"></h4>
-
+				<h2 id="char-name" class="char-name"></h2>
+				<h6 class="lbl">Status:</h6>
+				<h5 class="char-status" id="char-status"></h5>
+				<h6 class="lbl">Species:</h6>
+				<h5 id="char-species"></h5>
+				<h6 class="lbl">Last known location:</h6>
+				<h5 id="char-location"></h5>
+				<h6 class="lbl">First seen in:</h6>
+				<h5 id="char-first-seen"></h5>
 			</div>
 		</div>
+	<!--inputs prev and next-->
 		<div class="input-container">
 			<input id="btn-prev" type="button" value="Prev">
 			<input id="btn-next" type="button" value="Next">
 		</div>
-
 	</main>
-
-	<footer>
-	</footer>
-
 
 	<!-- scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -51,6 +52,5 @@
 	<script src="public/js/app.js"></script>
 	<script type = "module" src="public/js/fetchData.js"></script>
 	<script type= "module" src="public/js/callback.js"></script>
-
 </body>
 </html>

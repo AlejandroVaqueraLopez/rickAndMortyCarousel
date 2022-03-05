@@ -1,67 +1,91 @@
+/*variables*/
 :root{
-	--borderColor: #9b9b9b;
+	--borderColor: #10616c;
 	--fontColor: #eaeaea;
+	--aquaFontColor: #0bbcd5;
 }
+/*global styles*/
 *{
 	padding:0px;
 	margin:0px;
 }
+/*header*/
 header{
 	width:auto;
-	height:70px;
-	outline:solid red;
+	height:50px;
+	/*outline:solid red;*/
 	display:flex;
 	justify-content:center;
 	align-items:flex-end;
 	position:absolute;
 	z-index:2;
 	top:0;
-	left:calc(100vw / 2 - 100px);
-	
+	left:calc(100vw / 2 - 80px);
 }
 .header-logo{
-	width:200px;
-	/*outline:solid blue;*/
+	width:160px;
+	user-select:none;
 }
+/*main*/
 main{
 	position:absolute;
 	z-index:2;
-	height:600px;
+	height:500px;
 	width:300px;
-	/*outline:solid green;*/
 	left:calc((100vw / 2) - 150px);
-	top:calc((100vh / 2) - 300px);
-	border:2px solid var(--borderColor);
+	top:calc((100vh / 2) - 250px);
+	font-family: 'Oswald', sans-serif;
+	letter-spacing:1px;
 }
 .carousel-content{
 	background:rgba(0,0,0,0.7);
 	width:100%;
-	height:550px;
+	height:450px;
 	color:var(--fontColor);
 }
+.btn-author{
+	height:30px;
+	width:30px;
+	border:none;
+	border-radius:50%;
+	position:absolute;
+	right:5px;
+	top:5px;
+	background:none;
+	background-size:130%;
+	background-position:center;
+	box-shadow:1px 1px 9px black;
+}
+.btn-author:hover{
+	cursor:pointer;
+}
 .character-image{
-	height:300px;
+	height:250px;
 	width:300px;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	background-size:cover;
+	background-position:center;
 }
 .character-info{
 	/*outline:solid yellow;*/
-	height:250px;
+	height:200px;
 	width:100%;
 	overflow-y:auto;
 	overflow-x:none;
 	display:flex;
 	flex-direction:column;
+	border-left:2px solid var(--borderColor);
+	border-right:2px solid var(--borderColor);
+	box-sizing:border-box;
+	padding:0px 10px;
 }
-.char-name{
-
+.char-status{
+	color:lightgreen;
 }
-.lbl-char-location{
-	color:indianred;
+.lbl{
+	color:var(--aquaFontColor);
 }
-.lbl-char-first-seen{
-	color:indianred;
-}
-
 .input-container{
 	/*outline:solid blue;*/
 	height:50px;
@@ -70,6 +94,7 @@ main{
 	justify-content:space-around;
 	align-items:center;
 }
+/*input zone*/
 .input-container input{
 	height:100%;
 	width:50%;
@@ -78,13 +103,13 @@ main{
 	color:var(--fontColor);
 	border:2px solid var(--borderColor);
 }
+.input-container input:first-child{
+	border-bottom-left-radius:15px;
+}
+.input-container input:nth-child(2){
+	border-bottom-right-radius:15px;
+}
 .input-container input:hover{
 	cursor:pointer;
 	background:rgba(255,255,255,0.3);
 }
-footer{
-	outline:solid yellow;
-	grid-column:1/5;
-	height:5vh;
-}
-

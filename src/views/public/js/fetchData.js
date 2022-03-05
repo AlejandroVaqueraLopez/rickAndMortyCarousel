@@ -1,3 +1,4 @@
+//this function does a fetch request to the api
 let fetchData = (url) => {
   return new Promise((resolve,rejected) => {
 
