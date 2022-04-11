@@ -1,7 +1,6 @@
 //this function does a fetch request to the api
 let fetchData = (url) => {
   return new Promise((resolve,rejected) => {
-
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET",url,true);
     xhttp.onreadystatechange = (event) => {
@@ -18,5 +17,4 @@ let fetchData = (url) => {
 
   })
 }
-
 export default fetchData;

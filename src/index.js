@@ -9,6 +9,3 @@ app.use(express.static(path.join(__dirname,'views')));//our views and stylesheet
 app.use(router);//all routes
 /*port*/
 app.listen(5000,() => console.log("ready"));//here we hear the port
-
-
-
