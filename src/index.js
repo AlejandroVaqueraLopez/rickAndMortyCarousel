@@ -8,4 +8,4 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 app.use(express.static(path.join(__dirname,'views')));//our views and stylesheets
 app.use(router);//all routes
 /*port*/
-app.listen(5000,() => console.log("ready"));//here we hear the port
+app.listen(5000,() => console.log("ready on port 5000"));//here we hear the port
